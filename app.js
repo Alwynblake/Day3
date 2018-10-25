@@ -6,7 +6,9 @@ console.log('checking userName after prompt', userName);
 
 alert('Please respond to the following questions with Y/y/yes/YES or no...');
 
-var likeDogs = prompt('Do I like dogs?').toUpperCase();
+
+function questionOne() {
+    var likeDogs = prompt('Do I like dogs?').toUpperCase();
 console.log ('checking userName: ', userName);
     if (likeDogs === 'Y' || likeDogs === 'YES') {
         alert('Congrats! ' + userName + ', you know me extremely well.')
@@ -14,7 +16,9 @@ console.log ('checking userName: ', userName);
         alert('Sorry, ' + userName + ' you were wrong.');
 }
 
-var likeLearning = prompt('Do I like to learn?').toUpperCase();
+}
+function questionTwo() {
+    var likeLearning = prompt('Do I like to learn?').toUpperCase();
 console.log ('Do I like learning?', likeLearning);
 if (likeLearning === 'Y' || likeLearning === 'YES') {
     alert('Congrats! ' + userName + ', you know me extremely well.')
@@ -23,15 +27,19 @@ if (likeLearning === 'Y' || likeLearning === 'YES') {
 
 }
 
-     var likeMovies = prompt('Do I like movies?').toUpperCase();
-     console.log ('Do I like movies?', likeMovies);  
+}
+function questionThree() {
+    var likeMovies = prompt('Do I like movies?').toUpperCase();
+    console.log ('Do I like movies?', likeMovies);  
 if (likeMovies === 'Y' || likeMovies === 'YES') {
-    alert('Congrats! ' + userName + ', you know me extremely well.')
+   alert('Congrats! ' + userName + ', you know me extremely well.')
 }else {
-    alert('Sorry, ' + userName + ' you were wrong.')
+   alert('Sorry, ' + userName + ' you were wrong.')
 
 }   
 
+}
+function questionFour() {
     var likeFood = prompt('Do I like to eat good food?').toUpperCase();
     console.log ('Do I like food?', likeFood);  
 if (likeFood === 'Y' || likeFood === 'YES') {
@@ -39,7 +47,8 @@ if (likeFood === 'Y' || likeFood === 'YES') {
 }else {
     alert('Sorry, ' + userName + ' you were wrong.')
 }
-
+}
+function questionFive() {
     var likeIcecream = prompt('Do I like to ice cream?').toUpperCase();
     console.log ('Do I like ice cream?', likeIcecream);  
 if (likeIcecream === 'Y' || likeIcecream=== 'YES') {
@@ -47,8 +56,9 @@ if (likeIcecream === 'Y' || likeIcecream=== 'YES') {
 }else {
     alert('Sorry, ' + userName + ' you were wrong.')
 }
-
-var favNumber = 32
+}
+function questionSix() {
+    var favNumber = 32
 var counter = 0;
 var numberGuess = parseInt(prompt('guess my favorite number. you have four chances!'));
 
@@ -68,8 +78,9 @@ if (numberGuess === favNumber) {
 } else {
   alert('The number is ' + favNumber);
 }
-
-//create an array
+}
+function questionSeven() {
+    //create an array
 var guessPlaces = prompt('Can you guess a state that I have lived in besides Washington?');
 var placesLived = ['New York', 'Dallas', 'Massachusetts']
 var sixGuesses = 0;
@@ -81,5 +92,12 @@ while (guessPlaces !== placesLived && sixGuesses < 5) {
 
 
 }
+}
 
-
+questionOne();
+questionTwo();
+questionThree();
+questionFour();
+questionFive();
+questionSix();
+questionSeven();
