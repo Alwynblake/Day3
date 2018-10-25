@@ -1,3 +1,11 @@
+header {
+    color: lightgray;
+    background-color: blue;
+    font-size:60px;
+    display: block;
+    text-align: center;
+    
+}
 
 body {
     background-color: lightblue;

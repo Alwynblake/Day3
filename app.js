@@ -64,14 +64,22 @@ while (numberGuess !== favNumber && counter < 3) {
   }
 }
 if (numberGuess === favNumber) { 
-  alert('correct'); 
+  alert('Correct!'); 
 } else {
   alert('The number is ' + favNumber);
+}
 
 //create an array
 var guessPlaces = prompt('Can you guess a state that I have lived in besides Washington?');
 var placesLived = ['New York', 'Dallas', 'Massachusetts']
+var sixGuesses = 0;
 console.log(placesLived);
 
+while (guessPlaces !== placesLived && sixGuesses < 5) {
+  console.log(sixGuesses);
+  sixGuesses++;
+
+
 }
+
 
