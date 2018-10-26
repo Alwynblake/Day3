@@ -1,3 +1,6 @@
+div#container{
+
+}
 header {
     color: lightgray;
     background-color: blue;
@@ -19,3 +22,13 @@ p {
     font-family: verdana;
     font-size: 20px;
 }
+main {
+    margin-bottom: 60px;
+  }
+footer {
+    background-color: #af6b6b;
+    height: 60px; 
+    width: 800px;
+    position: fixed;
+    bottom: 00;
+  }
